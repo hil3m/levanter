@@ -21,20 +21,20 @@ bot.addCommand(
     })
     const [date, time] = getDate()
     let CMD_HELP = `╭────────────────╮
-						ʟᴇᴠᴀɴᴛᴇʀ
+						𝖍𝖎𝖑𝖊𝖒
 ╰────────────────╯
 
 ╭────────────────
 │ Prefix : ${ctx.PREFIX}
-│ User : ${message.pushName}
-│ Time : ${time}
-│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-│ Date : ${date.toLocaleDateString('hi')}
-│ Version : ${ctx.VERSION}
+│ Kullanıcı : ${message.pushName}
+│ Süre : ${time}
+│ Gün : ${date.toLocaleString('tr', { weekday: 'long' })}
+│ Tarih : ${date.toLocaleDateString('hi')}
+│ Versiyon : ${ctx.VERSION}
 │ Plugins : ${ctx.pluginsCount}
 │ Ram : ${getRam()}
-│ Uptime : ${getUptime('t')}
-│ Platform : ${getPlatform()}
+│ Zaman : ${getUptime('t')}
+│ OS : ${getPlatform()}
 ╰────────────────
 ╭────────────────
 `
@@ -75,7 +75,7 @@ bot.addCommand(
 )
 bot.addCommand(
   {
-    pattern: 'menu ?(.*)',
+    pattern: 'hilem ?(.*)',
     dontAddCommandList: true,
   },
   async (message, match, ctx) => {
@@ -90,18 +90,18 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
-    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
+    let msg = `\`\`\`╭═══ 𝖍𝖎𝖑𝖊𝖒 ═══⊷
 ┃❃╭──────────────
 ┃❃│ Prefix : ${ctx.PREFIX}
-┃❃│ User : ${message.pushName}
-┃❃│ Time : ${time}
-┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-┃❃│ Date : ${date.toLocaleDateString('hi')}
-┃❃│ Version : ${ctx.VERSION}
+┃❃│ Kullanıcı : ${message.pushName}
+┃❃│ Süre : ${time}
+┃❃│ Gün : ${date.toLocaleString('en', { weekday: 'long' })}
+┃❃│ Tarih : ${date.toLocaleDateString('hi')}
+┃❃│ Versiyon : ${ctx.VERSION}
 ┃❃│ Plugins : ${ctx.pluginsCount}
 ┃❃│ Ram : ${getRam()}
-┃❃│ Uptime : ${getUptime('t')}
-┃❃│ Platform : ${getPlatform()}
+┃❃│ Zaman : ${getUptime('t')}
+┃❃│ OS : ${getPlatform()}
 ┃❃╰───────────────
 ╰═════════════════⊷\`\`\`\n`
 
